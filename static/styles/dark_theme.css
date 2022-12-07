@@ -877,7 +877,10 @@
             box-shadow: 0 0 0 1px hsla(330, 40%, 20%, 1);
         }
 
-        .codehilite code,
+        .codehilite code {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
         .codehilite pre {
             color: hsl(212, 100%, 82%);
             background-color: hsl(212, 25%, 15%);
@@ -1256,12 +1259,18 @@
     }
 
     #feedback_container,
-    code,
     .typeahead.dropdown-menu {
         background-color: hsl(212, 25%, 15%);
-        border-color: hsla(0, 0%, 0%, 0.5);
+-       border-color: hsla(0, 0%, 0%, 0.5);
         color: inherit;
     }
+
+    code {
+        background-color: rgba(255, 255, 255, 0.05);
+        border-color: rgba(255, 255, 255, 0.1);
+        color: inherit;
+    }
+    
 
     /* Search highlight used in both topics and rendered_markdown */
     .highlight {
